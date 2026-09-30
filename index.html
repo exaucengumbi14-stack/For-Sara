@@ -339,7 +339,7 @@
     <div class="overlay"></div>
 
     <!-- MUSIQUE -->
-    <audio id="bg-music" loop src="best-part.m4a"></audio>
+    <audio id="bg-music" loop src="meilleure partie.m4a.mp3"></audio>
 
     <div class="main-container">
 
@@ -367,31 +367,31 @@
 
             <div class="cards-container">
                 <div class="card active" data-title="Balade en scooter">
-                    <img src="scooter.png" class="card-image">
+                    <img src="Scooter.png.JPG" class="card-image">
                     <div class="card-footer"><div class="card-title">🛵 Balade en scooter</div></div>
                 </div>
                 <div class="card" data-title="Pique-nique">
-                    <img src="picnic.png" class="card-image">
+                    <img src="pique-nique.png.JPG" class="card-image">
                     <div class="card-footer"><div class="card-title">🧺 Pique-nique</div></div>
                 </div>
                 <div class="card" data-title="Balade au musée">
-                    <img src="musee.png" class="card-image">
+                    <img src="musée.png.JPG" class="card-image">
                     <div class="card-footer"><div class="card-title">🏛️ Balade au musée</div></div>
                 </div>
                 <div class="card" data-title="Cinéma">
-                    <img src="cinema.png" class="card-image">
+                    <img src="Cinéma.png.JPG" class="card-image">
                     <div class="card-footer"><div class="card-title">🎬 Cinéma</div></div>
                 </div>
                 <div class="card" data-title="Manger en resto">
-                    <img src="restaurant.png" class="card-image">
+                    <img src="Maison.png.JPG" class="card-image">
                     <div class="card-footer"><div class="card-title">🍝 Manger</div></div>
                 </div>
                 <div class="card" data-title="Balade">
-                    <img src="balade.png" class="card-image">
+                    <img src="photo1.png.JPG" class="card-image">
                     <div class="card-footer"><div class="card-title">🌅 Balade</div></div>
                 </div>
                 <div class="card" data-title="Profiter à la maison">
-                    <img src="maison.png" class="card-image">
+                    <img src="Maison.png.JPG" class="card-image">
                     <div class="card-footer"><div class="card-title">🏠 Profiter à la maison</div></div>
                 </div>
             </div>
@@ -415,24 +415,36 @@
             <div class="final-recap" id="final-recap"></div>
 
             <div class="photo-grid">
-                <img src="photo1.png" alt="Souvenir">
-                <img src="photo2.png" alt="Souvenir">
-                <img src="photo3.png" alt="Souvenir">
-                <img src="photo4.png" alt="Souvenir">
-                <img src="photo5.png" alt="Souvenir">
-                <img src="photo6.png" alt="Souvenir">
-                <img src="photo7.png" alt="Souvenir">
-                <img src="photo8.png" alt="Souvenir">
-                <img src="photo9.png" alt="Souvenir">
-                <img src="photo10.png" alt="Souvenir">
+                <img src="photo1.png.JPG" alt="Souvenir">
+                <img src="photo2.png.JPG" alt="Souvenir">
+                <img src="Photo3.png.JPG" alt="Souvenir">
+                <img src="photo4.png.JPG" alt="Souvenir">
+                <img src="photo6.png.JPG" alt="Souvenir">
+                <img src="photo7.png.JPG" alt="Souvenir">
+                <img src="Photo8.png.JPG" alt="Souvenir">
+                <img src="photo9.png.JPG" alt="Souvenir">
+                <img src="photo10.png.JPG" alt="Souvenir">
             </div>
         </div>
 
     </div>
 
     <script>
-        // --- BOUCLE LECTURE 12 VIDÉOS SANS FIN ---
-        const videoList = Array.from({length: 12}, (_, i) => `video${i + 1}.mp4`);
+        // --- BOUCLE LECTURE VIDÉOS ---
+        const videoList = [
+            "vidéo1.mp4.mov",
+            "Vidéo2.mp4.mov",
+            "Vidéo3.mp4.MP4",
+            "vidéo4.mp4. MP4",
+            "Vidéo5.mp4. MP4",
+            "vidéo6.mp4. MOV",
+            "Vidéo7.mp4. MOV",
+            "Vidéo8.mp4. MOV",
+            "Vidéo9.mp4. MOV",
+            "vidéo10.mp4. MOV",
+            "Vidéo11.mp4. MOV",
+            "Vidéo12.mp4. MOV"
+        ];
         let currentVideoIdx = 0;
         const player = document.getElementById('video-player');
 
@@ -443,7 +455,7 @@
         }
 
         player.addEventListener('ended', playNextVideo);
-        playNextVideo(); // Lancement initial
+        playNextVideo();
 
         // --- NAVIGATION ET INTERACTIONS ---
         const envContainer = document.getElementById('env-container');
@@ -501,4 +513,3 @@
     </script>
 </body>
 </html>
-
